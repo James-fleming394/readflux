@@ -79,13 +79,13 @@ ReadFlux is built by a former **teacher**, **sports coach**, and **academic advi
 
 ---
 
-## 🔄 Status
+## 🔮 What’s Next
 
-🚧 In development — MVP expected [8/1/2025]  
-✅ Core features: user auth, story loading, progress tracking  
-📝 Next up: quiz builder, XP system, content editor
-
----
+- [ ] MVP with one public domain story
+- [ ] Auth system & dashboard
+- [ ] Quiz logic & scoring
+- [ ] Story Builder UI
+- [ ] Teacher role support
 
 ## 📬 Contact
 
