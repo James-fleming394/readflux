@@ -11,7 +11,7 @@ class Router
         $segments = explode('/', $uri);
 
         // Defaults
-        $controllerName = ucfirst($segments[0] ?? 'home') . 'Controller';
+        $controllerName = !empty($segments[0]) ? ucfirst($segments[0]) . 'Controller' : 'HomeController';
         $method = $segments[1] ?? 'index';
         $params = array_slice($segments, 2);
 

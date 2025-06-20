@@ -6,6 +6,12 @@ class Controller
     protected function view($view, $data = [])
     {
         extract($data);
-        require "../app/views/{$view}.php";
+        $viewPath = __DIR__ . "/../views/{$view}.php";
+        
+        if (file_exists($viewPath)) {
+            require $viewPath;
+        } else {
+            echo "<h1>View not found:</h1> <p>{$view}</p>";
+        }
     }
 }
